@@ -1,0 +1,33 @@
+.nav {
+    width: 100%;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    background-color: #D7C4BB;
+    overflow: auto;
+}
+
+.nav li a {
+	float: left;
+	padding: 12px 8px 12px 8px;
+	text-decoration: none;		
+	font-weight: bold;
+        font-size: 17px;
+	text-align: center;
+	width: 18%;
+}
+
+
+.nav li a:hover {
+	color: #ffffff;
+	background-color: #B19693;
+}
+
+@media screen and (max-width: 500px) {
+  .nav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; 
+  }
+}
