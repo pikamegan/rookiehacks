@@ -24,7 +24,7 @@ function SignupForm(props) {
                 "email":state.email,
                 "password":state.password,
             }
-            axios.post('http://localhost:3000/api/signup', payload)
+            axios.post('http://localhost:3000/API/v1/users/signup', payload)
                 .then(function (response) {
                     if(response.data.code === 200){
                         setState(prevState => ({
@@ -64,7 +64,7 @@ function SignupForm(props) {
     }
 
     return(	
-        <div className="login-card">
+        <div className="signup-card">
             <form>
 		<div class="company-name"><span>Job Seekers</span></div>
                 <div className="form-group">
